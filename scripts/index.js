@@ -1,10 +1,15 @@
-const title = document.getElementById('anim');
-const pic = document.getElementById('pic');
-const resolution = window.screen.width;
-title.classList.remove('animate__animated');
-pic.classList.remove('animate__animated');
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const pic = document.getElementById('pic');
 
-if(resolution > 767) {
-    title.classList.add('animate__animated');
-    pic.classList.add('animate__animated');
-}
+    if (pic) {
+        const applyAnimation = () => {
+            if (window.innerWidth > 767) {
+                pic.classList.add('animate__animated');
+            } else {
+                pic.classList.remove('animate__animated');
+            }
+        };
+        applyAnimation();
+    }
+});
