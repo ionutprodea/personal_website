@@ -23,12 +23,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" id="stylesheet" />
+    <script src="/scripts/theme.js"></script>
   </head>
   <body>
     <section class="top-nav">
       <a href="index.html"
-        ><img class="nav-logo" src="/images/logo.png" alt="logo"
+        ><img class="nav-logo" src="/images/logo.png" alt="logo" id="logo"
       /></a>
       <input id="menu-toggle" type="checkbox" />
       <label class="menu-button-container" for="menu-toggle">
@@ -41,6 +42,13 @@
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="projects.html">PROJECTS</a></li>
         <li><a href="contact.html">CONTACT</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="theme"/>
+            <span class="slider round"></span>
+          </label>
+        </li>
+        </li>
       </ul>
     </section>
     <h1 class="jump-in animate__slideInRight animate__delay-1s" id="anim">
@@ -141,4 +149,5 @@
   </body>
   <script src="/scripts/title__animate.js"></script>
   <script src="/scripts/about.js"></script>
+  <script src="/scripts/logo.js"></script>
 </html>
