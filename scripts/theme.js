@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const stylesheet = document.getElementById('stylesheet');
 
     // Load stored theme preference if available
+    if (!localStorage.getItem('theme-ionutprodea')) {
+        theme.checked = true;
+        stylesheet.href = "/css/style.css";
+        localStorage.setItem("theme-ionutprodea", "style1");
+    }
+
     if (localStorage.getItem('theme-ionutprodea') === 'style1') {
         theme.checked = true;
         stylesheet.href = "/css/style.css";
