@@ -433,6 +433,7 @@ a {
 
 .contact__message {
     height: 340px;
+    padding-top: 10px;
 }
 
 .contact__input:focus {

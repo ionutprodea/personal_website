@@ -1,5 +1,5 @@
 :root {
-    --color-one:  #03a348;
+    --color-one:  #245ace;
     --color-two: #04D9B2;
     --color-three: #242424;
     
@@ -107,12 +107,11 @@ a {
     margin: 10px 20px;
 }
 
-
-
 .menu > li {
-    color: #04D960;
+    color: var(--color-one);
     overflow: hidden;
 }
+
 
 .menu-button-container {
     display: none;
@@ -374,8 +373,10 @@ a {
 
 .about__work > h2 > span {
     font-size: 2rem;
+    font-weight: 400;
     color: var(--color-three);
     margin-left: 40px;
+    text-shadow: none;
 }
 
 .card_title {
@@ -411,7 +412,7 @@ a {
 
 .contact__label {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--color-three);
     padding: 10px 0;
     margin-left: 22px;
@@ -432,6 +433,7 @@ a {
 
 .contact__message {
     height: 340px;
+    padding-top: 10px;
 }
 
 .contact__input:focus {
