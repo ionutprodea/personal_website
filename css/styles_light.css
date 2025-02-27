@@ -214,6 +214,9 @@ a {
     scale: 1.15;
   }
 
+  #theme-label {
+    margin-right: 14px;
+  }
 @media screen and (min-width: 768px) {
 
 
@@ -239,6 +242,10 @@ a {
         margin: 0 1rem;
         font-size: 1.5rem;
         display: contents;
+    }
+
+    #theme-label {
+        display: none;
     }
 
 }
