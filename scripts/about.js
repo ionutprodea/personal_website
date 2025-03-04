@@ -11,6 +11,18 @@ document.addEventListener("DOMContentLoaded", function() {
         applyAnimation();
     }
 
+    const links = document.getElementById('links');
+    if (links) {
+        const applyAnimation = () => {
+            if (window.innerWidth > 767) {
+                links.classList.add('animate__animated');
+            } else {
+                links.classList.remove('animate__animated')
+            }
+        }
+        applyAnimation();
+    }
+
     const hobbies = document.getElementById('hobbies');
     if (hobbies) {
         const applyAnimation = () => {
