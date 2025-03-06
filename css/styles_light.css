@@ -280,7 +280,7 @@ a {
 
 .hero__img img {
     width: 100%;
-    clip-path: polygon(26% 0, 88% 14%, 62% 100%, 5% 97%);
+    clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
     filter: grayscale();
     opacity: 1;
     max-width: 800px;
